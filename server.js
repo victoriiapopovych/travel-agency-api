@@ -123,7 +123,7 @@ app.put('/packages/:id', (req, res) => {
       console.error(err);
       res.status(500).send("Error updating package.");
     } else {
-      res.json({ message: "Package updated successfully" });
+      res.json({ message: "Package updated successfully." });
     }
   });
 
