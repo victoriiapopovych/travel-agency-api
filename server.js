@@ -121,7 +121,7 @@ app.put('/packages/:id', (req, res) => {
   db.query(sql, [hotel_id, start_date, duration_days, price, id], (err, result) => {
     if (err) {
       console.error(err);
-      res.status(500).send("Error updating package");
+      res.status(500).send("Error updating package.");
     } else {
       res.json({ message: "Package updated successfully" });
     }
